@@ -9,25 +9,36 @@ function initialize() {
         }, 0)*/
               
 }
+let barraOnOff = document.querySelector('.menu');
+
+function displayOff() {
+    barraOnOff.style.display = 'none';
+}
+
+function displayOn() {
+    barraOnOff.style.display = 'block';
+}
 
 function itensMenu() {
-    const itens = document.querySelector('#sorte');
-    const menu = document.querySelector('.menu');
-    const dentro = document.getElementById('dentro')
-    console.log(dentro)
-    
-    itens.addEventListener('mouseover', () => {
-      menu.style.display = 'block';
+    let clickBarraItens = document.getElementById('sorte');
+    let dentroMain = document.getElementById('dentro');
+
+    dentroMain.addEventListener('click', () => {
+        if (barraOnOff.style.display === 'block') {
+            displayOff();
+        }
     });
-    
-    dentro.addEventListener('mouseover', (e)=> {
-        console.log('passei', e)
-        menu.style.display = 'none';
-        
-      })
-    
-  }
+
+    clickBarraItens.addEventListener('click', () => {
+        if (barraOnOff.style.display === 'block') {
+            displayOff();
+        } else {
+            displayOn();
+        }
+    });
+}
   
+
 
  
 /*function dataHora () {

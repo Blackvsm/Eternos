@@ -14,7 +14,7 @@ header {
 
 menu { 
     z-index: 1;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 3px; 
 }
 
@@ -30,7 +30,7 @@ menu > ul > li > a {
     padding: 5px;
 
     color: #f8f8f8;
-    background-color: rgb(47, 47, 47);
+    background-color: rgba(47, 47, 47, 0.913);
     text-decoration: none;
     text-align: center;
     
@@ -41,7 +41,7 @@ menu > ul > li > a {
 
 menu > ul > li > a:hover {
   color: gold;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.899);
   font-weight: 600;
 
 }
