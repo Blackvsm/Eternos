@@ -8,13 +8,11 @@ header {
     
 }
 
-#menu {
+.menu {
     display: none;
 }
 
-menu {
-    flex-direction: column;
-    flex-wrap: wrap;
+menu { 
     z-index: 1;
     background-color: black;
     border-radius: 3px; 
@@ -49,7 +47,7 @@ menu > ul > li > a:hover {
 }
 
 span#sorte { 
-    display: block;
+    display: inline-block;
     background-color: black;
     width: 100vw;
     color: white;
@@ -70,7 +68,6 @@ a {
 
 main {
     background-color: white;
-
     width: 90%;
     height: 60%;
     
@@ -88,6 +85,7 @@ section {
 article {
     display: inline-block; 
 }
+
 
 p {
     padding: 10px 5px 5px 5px;

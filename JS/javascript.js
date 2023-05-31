@@ -1,8 +1,8 @@
 
 function initialize() {   
     itensMenu()    
-    somClick()
-    clickMenu()
+    
+    
 
     /*setInterval( () => {
              dataHora()
@@ -11,31 +11,24 @@ function initialize() {
 }
 
 function itensMenu() {
-    itens = document.querySelector('#sorte')
-    itens.addEventListener('mouseover', (e)=>{
-    console.log(e)
-        
-    if (menu.style.display === 'block') {
-            menu.style.display = 'none'
-        
-    } else {
-            menu.style.display = 'block'
-        }
-    })
-}
-
-
-/*function clickMenu() {
-
-
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none'
+    const itens = document.querySelector('#sorte');
+    const menu = document.querySelector('.menu');
+    const dentro = document.getElementById('dentro')
+    console.log(dentro)
     
-    } else {
-        menu.style.display = 'block'
-    }
-    somClick() 
-}*/
+    itens.addEventListener('mouseover', () => {
+      menu.style.display = 'block';
+    });
+    
+    dentro.addEventListener('mouseover', (e)=> {
+        console.log('passei', e)
+        menu.style.display = 'none';
+        
+      })
+    
+  }
+  
+
  
 /*function dataHora () {
     const display = document.getElementById('dataHora')
@@ -44,17 +37,7 @@ function itensMenu() {
     display.innerHTML = 'Time: ' + hora
 }*/
 
-function somClick () {
-    const clickSom = document.querySelector('#SomClick')
-    
-    const clickMenu = document.querySelector("#menu")
-    
-    clickMenu.addEventListener('onclick onkeypress', e=> {
-        console.log(e)
-    })
-    
 
-}
     
     
     
