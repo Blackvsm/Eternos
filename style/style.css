@@ -1,8 +1,65 @@
 header {
+    display: flex;
+  
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: black;
-    padding: 8px 0px 13px 10px;
-    height: 23px;
+    height: 30px;
     
+}
+
+#menu {
+    display: none;
+}
+
+menu {
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 1;
+    background-color: black;
+    border-radius: 3px; 
+}
+
+menu > ul {
+    list-style-type: none;
+   
+}
+
+
+menu > ul > li > a {
+    display: block;
+    width: 150px;
+    padding: 5px;
+
+    color: #f8f8f8;
+    background-color: rgb(47, 47, 47);
+    text-decoration: none;
+    text-align: center;
+    
+    
+    border-radius: 0px 1px ;
+    border-top: 3px solid rgb(0, 0, 0);
+}
+
+menu > ul > li > a:hover {
+  color: gold;
+  background-color: grey;
+  font-weight: 600;
+
+}
+
+span#sorte { 
+    display: block;
+    background-color: black;
+    width: 100vw;
+    color: white;
+    cursor: pointer;
+}
+
+span#sorte:hover {
+    color: gold;
+    
+    cursor: pointer;
 }
 
 a {
@@ -11,49 +68,16 @@ a {
     
 }
 
-a:active{
-    box-shadow: 0 0 0 0 black, inset 1px 1px 2px rgba(250, 1, 1, 0.185);
-}
-
-a:hover{
-    display: inline-block;
-    transition: 250ms;
-    color: var(--color-1);
-    font-size: 1.1rem;
-    padding: 1px;
-    width: 95px;
-    height: 30px;
-    border-radius: 0.5em;
-}
-
-
-
-ol, ul, li {
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-ul {
-    list-style: georgian;
-    
-}
-
-
-body {
-    background-color: #486388;
-}
-
 main {
     background-color: white;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.438);
+
     width: 90%;
     height: 60%;
     
     margin: auto;
     
     padding: 5px 15px 25px 15px;
-    border-radius: 0px 0px 20px 0px;
+    
 }
 
 section {
@@ -62,10 +86,8 @@ section {
 }
 
 article {
-    width: 85vw;
     display: inline-block; 
 }
-
 
 p {
     padding: 10px 5px 5px 5px;

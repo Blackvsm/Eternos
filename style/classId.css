@@ -66,17 +66,6 @@
    
 }
 
-#centro-1 {
-  display: flex;
-  justify-content: flex-end;
-  
-}
-
-#centro-2 {
-  
-  margin: auto;
-  
-}
   
 .letras {
     flex-basis: calc(100% - 36px); /* Ajuste o valor da margem direita da imagem */
@@ -118,6 +107,10 @@ a, li {
 .button-list li:hover {
   background-color: #bbbbbb;
   cursor: pointer;
+}
+
+#sorte {
+  color: white;
 }
 
 
