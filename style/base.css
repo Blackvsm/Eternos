@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+@font-face {
+    font-family: 'digital' ;
+    src: url('../fonts/digital-7.ttf') format('ttf'), url('../fonts/DS-DIGII.TTF') format('ttf');
+    font: normal;
+    font-style: normal;
+}  
+
+:root {
+    --font-digital: 'Play', sans-serif;
+    --font-pixel: 'Silkscreen', cursive;
+    --font-time: 'Silkscreen', cursive;
+    --color-1: #f82646;
+    --color-2: #875574;
+    --color-3: #458741;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+

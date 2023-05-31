@@ -1,0 +1,2 @@
+const star = new initialize()
+
