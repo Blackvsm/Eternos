@@ -1,2 +1,1 @@
 const star = new initialize()
-

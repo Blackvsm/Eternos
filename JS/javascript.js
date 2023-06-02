@@ -1,59 +1,47 @@
-
-function initialize() {   
-    itensMenu()    
-    
-    
-
-    /*setInterval( () => {
-             dataHora()
-        }, 0)*/
-              
-}
-let barraOnOff = document.querySelector('.menu');
-
-function displayOff() {
-    barraOnOff.style.display = 'none';
-}
-
-function displayOn() {
-    barraOnOff.style.display = 'block';
-}
-
-function itensMenu() {
-    let clickBarraItens = document.getElementById('sorte');
-    let dentroMain = document.getElementById('dentro');
-
-    dentroMain.addEventListener('click', () => {
-        if (barraOnOff.style.display === 'block') {
-            displayOff();
-        }
-    });
-
-    clickBarraItens.addEventListener('click', () => {
-        if (barraOnOff.style.display === 'block') {
-            displayOff();
-        } else {
-            displayOn();
-        }
-    });
-}
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.navList = document.querySelector(navList);
+      this.navLinks = document.querySelectorAll(navLinks);
+      this.activeClass = "active";
   
-
-
+      this.handleClick = this.handleClick.bind(this);
+    }
+  
+    animateLinks() {
+      this.navLinks.forEach((link, index) => {
+        link.style.animation
+          ? (link.style.animation = "")
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`);
+      });
+    }
+  
+    handleClick() {
+      this.navList.classList.toggle(this.activeClass);
+      this.mobileMenu.classList.toggle(this.activeClass);
+      this.animateLinks();
+    }
+  
+    addClickEvent() {
+      this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent();
+      }
+      return this;
+    }
+  }
+  
+  const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+  );
  
-/*function dataHora () {
-    const display = document.getElementById('dataHora')
-    const hora = new Date().toLocaleTimeString("pt-BR")
-    
-    display.innerHTML = 'Time: ' + hora
-}*/
-
-
-    
-    
-    
-   
-
-  
+  mobileNavbar.init();
 
 
