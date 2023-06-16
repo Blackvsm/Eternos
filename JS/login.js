@@ -27,7 +27,7 @@ function obterDadosFormulario() {
 
   function redirecionarParaLink(validacao) {
     
-    const GenkiUrl = "./../paginas/jogadores/biel.html";
+    const GenkiUrl = "./jogadores/biel.html";
     
     const ErroUrl = './paginas/doc/erro.html'
     
