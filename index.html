@@ -1,89 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="shortcut icon" href="img/dragon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/estiloHome.css">
-    
-    <title>Éter: RPG</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>KAMAKURA</title>
 </head>
 <body>
- <!--<span id="dataHora" class="caixa"></span>-->
-    <Header>
-        <nav class="menu">
-        
-            <a class="logo" href="/">Eternos</a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-
-            <ul class="nav-list">
-                <li> <a href="paginas/éterianos.html" >Éterianos</a> </li>
-                <li> <a href="song.html" >Songs</a>  </li>
-                <li> <a href="#" >Click</a> </li>
-            </ul>    
+    <header class="cabeca">
+        <nav class="cabeca__navegacao">
+            <a href="#" ><span class="destaque">HOME</span></a>
+            <a href="#">SOBRE</a>
         </nav>
-
-       <audio src="songs/click.mp3"></audio> 
+    </header>
     
-    </Header>
-
-    <main class="container">
-        <div class="contador">
-            <h3>Sobreviventes & Eliminados</h3>
-            <h4>❤️68 <a href='https://emojitool.com/pt/skull'>💀</a>32</h4>
+    <main class="comeco">
+        <div class="apresentacao">
+            <h2><span class="destaque">BEM </span> - VINDO</h2>
+            <h3>À ERA</h3>
+            <h1>KAMAKURA</h1>
         </div>
-        <article class="artigo">
-            
-                <img src="img/Snake.jpeg" alt="" class="snake">
-            <div class="tela">
-                <h1>Painel Missões</h1>
-                <h3>Missão Global</h3>
-                <ul>
-                    <li>
-                        <span class="desta">Mate Alessio ⏳</span>
-                        <ol>
-                            <li>Representende da familia Van helsing </li>
-                            <li>3 moedas</li>
-                        </ol>
-                        <br>
-                    </li>
-                    <li>
-                        <span class="desta">Rebeldes ∞</span>
-                        <ol>
-                            <li>Elimine Vampiros Rebeldes</li>
-                            <li>1 a 3 moedas</li>
-                        </ol>
-                        <br>
-                    </li>
-                    <li>
-                        <span class="desta">Festa a Maskara ⏳</span>
-                        <ol>
-                            <li>Se prepare para o baile e vá</li>
-                            <li>Daqui 5 dias</li>
-                            <li>1 a 3 moedas</li>
-                        </ol>
-                    </li>
-                    
-                </ul>
+        
+        <section class="login">
+            <div class="login__apresentacao">
+                <h2>Faça o login</h2>
+                <h4>e</h4>
+                <h1>DESPERTA</h1>
             </div>
-            
-        </article>
 
-    </main>    
-    
-    
-    <footer>
-        <p>Desenvolvido por Daniel VSM</p>
-    </footer>
-    <script src="JS/javascript.js"></script>
-    <script src="JS/script.js"></script>
+            <div class="login__dados">
+                <label for="nome" class="nome">NOME</label>
+                <input type="text" placeholder="Digite o seu login" required class="nome" id="nome">
+                
+                <label for="senha" class="senha">SENHA</label>
+                <input type="password" placeholder="Digite o sua senha" required class="senha" id="senha">
+
+                <a href="#">ESQUECI SENHA</a>
+            </div>
+ 
+        </section>
+        <div class="layout">
+            <img src="./assets/img/layout/samurai.jpg" alt="Samurai em Lua Vermelha">
+        </div>
+    </main>
 </body>
 </html>
