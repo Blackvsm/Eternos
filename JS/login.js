@@ -27,6 +27,7 @@ function obterDadosFormulario() {
 
   function redirecionarParaLink(validacao) {
     const GenkiUrl = 'https://blackvsm.github.io/Eternos/paginas/jogadores/biel.html';
+    
     const ErroUrl = './paginas/doc/erro.html'
     
     if (validacao === 'Genki'){
