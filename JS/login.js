@@ -26,7 +26,7 @@ function obterDadosFormulario() {
 }
 
   function redirecionarParaLink(validacao) {
-    const GenkiUrl = '../paginas/jogadores/biel.html';
+    const GenkiUrl = './paginas/jogadores/biel.html';
     const ErroUrl = './paginas/doc/erro.html'
     if (validacao === 'Genki'){
         window.location.href = GenkiUrl;
