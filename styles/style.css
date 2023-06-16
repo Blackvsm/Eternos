@@ -1,43 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-
-:root {
-    --cor-princial: #000000;
-    --cor-conjugPrincipal: #f8f8f8;
-    
-    --cor-primaria: #F51015;
-    --cor-conjugPrimaria: #400203;
-    
-    --cor-secundaria: #057322;
-    --cor-conjugSecundaria: #7D7D7D;
-
-    --cor-terciaria: #303632;
-
-    --font-primaria: 'Inter', sans-serif;
-    --12px: 0.75rem;
-    --20px: 1.25rem;
-    --24px: 1.5rem;
-    --29px: 1.8rem;
-    --32px: 2rem;
-    --40px: 2.5rem;
-    --45px: 2.8rem;
-    --54px: 3.37rem;
-    --60px: 3.75rem;
-    --90px: 5.62rem;
-    --400px: 24.93rem;
-}
 
 html {
     background-color: var(--cor-princial);
 }
-
-
 
 .destaque {
     color: var(--cor-primaria);
@@ -51,7 +15,7 @@ html {
 
 .cabeca {
     display: flex;
-    padding: var(--29px) var(--24px);
+    padding: var(--29px) var(--24px) 0 ;
     font-weight: 600;
 }
 
@@ -92,7 +56,6 @@ html {
     letter-spacing: 0.415em;
     text-align: center;
 
-
 }
 
 .apresentacao h2 {
@@ -117,7 +80,8 @@ html {
 .login {
     display: flex;
     flex-direction: column;
-    padding-left: var(--45px);
+    padding: 30px 0 51px 4px;
+    Offset: 2px, 1px;
    
     background-color: var(--cor-conjugPrincipal);
     border-radius: 3px;
@@ -126,20 +90,26 @@ html {
     font-family: var(--font-primaria);
     
     margin-bottom: var(--60px);
-    width: 30.62rem;
-    height: 30.5rem;
     margin-top: var(--54px);
+    width: 80vw;
     
+}
+
+@media (min-width: 1000px){
+    .login{
+        width: 650px;
+    }
     
 }
 
 .login__apresentacao{
-    padding: var(--29px);
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.login__apresentacao h2, h4 {
-    
-    text-align: center;
+.login__apresentacao h1, h2, h4 {
+    margin: auto;
     font-size: var(--24px);
     font-weight: 300;
     letter-spacing: -0.5px;
@@ -148,23 +118,19 @@ html {
 }
 
 .login__apresentacao h1 {
-    text-align: center;
-    font-weight: 300;
+    font-weight: 200;
+    letter-spacing: var(--12px);
     
-    font-size: var(--24px);
-    letter-spacing: var(--20px);
-    padding: 5px;
     color: var(--cor-primaria);
 }
 
 .login__dados {
     display: flex;
     flex-direction: column;
+    padding: 30px 15px;
     justify-content: center;
-    
     font-family: var(--font-primaria);
-
-    width: var(--400px);
+   
 }
 
 .login__dados label {
@@ -183,7 +149,12 @@ html {
     background-color: var(--cor-terciaria);
     width: 100%;
     padding: 15px;
-    color: wheat;
+    
+}
+
+.login__dados:hover input {
+    color: var(--cor-primaria);
+    background-color:var(--cor-princial);
 }
 
 .login__dados a {
@@ -195,14 +166,38 @@ html {
     font-size: var(--12px);
 }
 
+.login__dados:active a {
+    color: var(--cor-conjugPrimaria);
+}
+
+.login__dados button {
+    background-color: var(--cor-secundaria) ;
+    color: var(--cor-conjugPrincipal);
+    font-weight: 400;
+    font-family: var(--font-primaria);
+    margin-top: 15px;
+    outline-offset: 0;
+    border: 0;
+    border-radius: 2px;
+    width: 90px;
+   
+    padding: 8px 15px;
+}
+
 .nome::placeholder, .senha::placeholder {
     color: var(--cor-conjugPrincipal);
     font-weight: 100;
     font-family: var(--font-primaria); 
   }
 
-.senha {
+ button:active {
+    background-color: var(--cor-conjugPrimaria);
+    
+}
+
+.senha{
     padding-top: var(--45px);
+
   }
 
 .layout{

@@ -1,0 +1,18 @@
+html {
+    background-color: var(--cor-princial);
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil h1 {
+    color: var(--cor-primaria);
+    font-family: 'Inter';
+    font-weight: 300;
+}
+
+.perfil img {
+    width: 50%;
+}

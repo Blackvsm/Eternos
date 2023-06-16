@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/root.css">
     <title>KAMAKURA</title>
+
 </head>
 <body>
     <header class="cabeca">
@@ -23,20 +25,23 @@
         </div>
         
         <section class="login">
+            
             <div class="login__apresentacao">
-                <h2>Faça o login</h2>
-                <h4>e</h4>
-                <h1>DESPERTA</h1>
+                    <h2>Faça o login</h2>
+                    <h4>e</h4>
+                    <h1>DESPERTA</h1>
             </div>
 
-            <div class="login__dados">
-                <label for="nome" class="nome">NOME</label>
-                <input type="text" placeholder="Digite o seu login" required class="nome" id="nome">
+            <div class="login__dados">   
                 
-                <label for="senha" class="senha">SENHA</label>
-                <input type="password" placeholder="Digite o sua senha" required class="senha" id="senha">
-
-                <a href="#">ESQUECI SENHA</a>
+                    <label for="nome" class="nome">NOME</label>
+                    <input type="text" placeholder="Digite o seu login" required class="nome" id="nome">
+                    
+                    <label for="senha" class="senha">SENHA</label>
+                    <input type="password" placeholder="Digite o sua senha" required class="senha" id="senha">
+                
+                <button type="submit" id="enviarBtn">Enviar</button>
+                <a href="./paginas/doc/erro.html">ESQUECI SENHA</a>
             </div>
  
         </section>
@@ -45,4 +50,5 @@
         </div>
     </main>
 </body>
+<script src="./JS/login.js"></script>
 </html>
