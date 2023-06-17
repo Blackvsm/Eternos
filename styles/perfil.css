@@ -1,9 +1,10 @@
 html {
     background-color: var(--cor-princial);
+    
 }
 
 .perfil {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 

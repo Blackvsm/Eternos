@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/root.css">
+    <link rel="shortcut icon" href="assets/img/favicon/olho-vermelho.png" type="image/x-icon">
     <title>KAMAKURA</title>
 
 </head>
@@ -18,6 +19,7 @@
     </header>
     
     <main class="comeco">
+        
         <div class="apresentacao">
             <h2><span class="destaque">BEM </span> - VINDO</h2>
             <h3>À ERA</h3>
@@ -25,7 +27,9 @@
         </div>
         
         <section class="login">
-            
+            <div class="login__background">
+                <img src="assets/img/layout/luared.png" alt="">
+            </div>
             <div class="login__apresentacao">
                     <h2>Faça o login</h2>
                     <h4>e</h4>
@@ -40,10 +44,10 @@
                     <label for="senha" class="senha">SENHA</label>
                     <input type="password" placeholder="Digite o sua senha" required class="senha" id="senha">
                 
-                <button type="submit" id="enviarBtn">Enviar</button>
+                <button type="submit" id="enviarBtn" onclick="espada()" >Enviar</button>
                 <a href="./paginas/doc/erro.html">ESQUECI SENHA</a>
             </div>
- 
+
         </section>
         <div class="layout">
             <img src="./assets/img/layout/samurai.jpg" alt="Samurai em Lua Vermelha">
@@ -51,5 +55,6 @@
     </main>
 </body>
 <script src="./JS/login.js"></script>
+<script src="./jogadores/entrada.js"></script>
 </html>
 
