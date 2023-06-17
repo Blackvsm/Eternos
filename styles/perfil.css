@@ -16,4 +16,16 @@ html {
 
 .perfil img {
     width: 50%;
+    
+}
+
+.animacao {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.animacao img {
+    text-align: center;
+    
 }
